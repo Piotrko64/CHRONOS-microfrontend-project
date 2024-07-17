@@ -10,6 +10,15 @@ import {
 })
 export class SelectPhotoDirective {
   @HostListener('click', ['$event']) onClick(event: Event) {
-    (event.target as HTMLElement).classList.toggle('image-checkbox-checked');
+    const allImages = document.querySelectorAll('.img-responsive');
+
+    allImages.forEach((img) => {
+      console.log(img);
+      img.classList.remove('image-checkbox-checked');
+    });
+
+    setTimeout(() => {
+      (event.target as HTMLElement).classList.toggle('image-checkbox-checked');
+    });
   }
 }

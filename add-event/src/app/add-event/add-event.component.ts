@@ -17,6 +17,21 @@ export class AddEventComponent {
     console.log(this.formComponent.form.valid);
     console.log(this.formComponent.form);
     console.log(this.spaNavigation);
+
+    const currentLS = JSON.parse(localStorage.getItem('events') || '[]');
+
+    // localStorage.setItem()
+
+    console.log([
+      ...currentLS,
+      {
+        ...this.formComponent.form.value,
+        img: (
+          document.querySelector('.image-checkbox-checked') as HTMLImageElement
+        ).src,
+      },
+    ]);
+
     // this.spaNavigation.nativeElement.click();
   }
 
