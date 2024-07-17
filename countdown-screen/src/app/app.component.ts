@@ -2,9 +2,11 @@ import { Component } from '@angular/core';
 
 type CurrentScreen = {
   endDate: Date;
-  title: string;
+  name: string;
   description: string;
-  backgroundUrl: string;
+  img: string;
+  time: string;
+  date: Record<'day' | 'month' | 'year', number>;
 };
 
 @Component({
@@ -33,14 +35,36 @@ export class AppComponent {
     console.log(new Date().getUTCDate());
     console.log(localStorage.getItem('currentScreen')!);
     const currectScreenData: CurrentScreen = JSON.parse(
-      localStorage.getItem('currentScreen')!
+      localStorage.getItem('current-event')!
     );
     console.log(currectScreenData);
     if (!currectScreenData) return;
 
-    this.eventDate = new Date(currectScreenData.endDate);
-    this.title = currectScreenData.title;
+    // this.eventDate = new Date(currectScreenData.endDate);
+    console.log(currectScreenData);
+    this.title = currectScreenData.name;
     this.description = currectScreenData.description;
-    this.backgroundUrl = currectScreenData.backgroundUrl;
+    this.backgroundUrl = currectScreenData.img;
+
+    const { year, month, day } = currectScreenData.date;
+    const { hour, minute } = this.convertTo24Hour(currectScreenData.time);
+
+    this.eventDate = new Date(year, month - 1, day, hour, minute);
+  }
+
+  private convertTo24Hour(time: string) {
+    const [hours, minutes] = time.split(/[: ]/);
+    const period = time.split(' ')[1];
+
+    let eventHour = parseInt(hours);
+    const eventMinute = parseInt(minutes);
+
+    if (period === 'PM' && eventHour !== 12) {
+      eventHour += 12;
+    } else if (period === 'AM' && eventHour === 12) {
+      eventHour = 0;
+    }
+
+    return { hour: eventHour, minute: eventMinute };
   }
 }

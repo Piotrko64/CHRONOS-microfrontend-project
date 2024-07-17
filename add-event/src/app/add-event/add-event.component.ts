@@ -22,16 +22,6 @@ export class AddEventComponent {
 
     // localStorage.setItem()
 
-    console.log([
-      ...currentLS,
-      {
-        ...this.formComponent.form.value,
-        img: (
-          document.querySelector('.image-checkbox-checked') as HTMLImageElement
-        ).src,
-      },
-    ]);
-
     localStorage.setItem(
       'events',
       JSON.stringify([
@@ -47,7 +37,17 @@ export class AddEventComponent {
       ])
     );
 
-    // this.spaNavigation.nativeElement.click();
+    localStorage.setItem(
+      'current-event',
+      JSON.stringify({
+        ...this.formComponent.form.value,
+        img: (
+          document.querySelector('.image-checkbox-checked') as HTMLImageElement
+        ).src,
+      })
+    );
+
+    this.spaNavigation.nativeElement.click();
   }
 
   get isValidForm() {
