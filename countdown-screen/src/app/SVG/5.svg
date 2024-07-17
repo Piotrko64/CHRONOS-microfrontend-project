@@ -1,0 +1,7 @@
+<svg width="280" height="517" viewBox="0 0 280 517" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M40 2L21 21L40 40H240L259 21L240 2H40Z" fill="#D61515" stroke="black" stroke-width="4"/>
+<path d="M40 240L21 259L2 240L2 40L21 21L40 40L40 240Z" fill="#D61515" stroke="black" stroke-width="4"/>
+<path d="M278 478L259 497L240 478L240 278L259 259L278 278L278 478Z" fill="#D61515" stroke="black" stroke-width="4"/>
+<path d="M40 240L21 259L40 278H240L259 259L240 240H40Z" fill="#D61515" stroke="black" stroke-width="2"/>
+<path d="M40 478L21 497L40 516H240L259 497L240 478H40Z" fill="#D61515" stroke="black" stroke-width="2"/>
+</svg>

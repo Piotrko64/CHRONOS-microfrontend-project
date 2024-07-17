@@ -1,0 +1,81 @@
+svg {
+  width: 95px;
+  height: auto;
+  margin: 5px;
+}
+
+svg > path {
+  fill: var(--helpDarkColor);
+}
+svg > path {
+  fill: rgba(255, 255, 255, 0);
+  stroke: rgba(170, 170, 170, 0.178);
+  transition: all 0.1s ease-in-out;
+}
+
+svg > path:nth-child(even) {
+  transition: all 0.2s ease-in-out;
+}
+
+svg > path.activeNumber {
+  fill: rgb(0, 0, 0);
+}
+.versionList {
+  width: 55px;
+}
+@media (max-width: 1450px) {
+  svg {
+    width: 65px;
+
+    margin: 4px;
+  }
+
+  .versionList {
+    width: 50px;
+  }
+}
+@media (max-width: 950px) {
+  svg {
+    width: 55px;
+
+    margin: 4px;
+  }
+
+  .versionList {
+    width: 40px;
+  }
+}
+@media (max-width: 720px) {
+  svg {
+    width: 45px;
+
+    margin: 4px;
+  }
+
+  .versionList {
+    width: 39px;
+  }
+}
+@media (max-width: 540px) {
+  svg {
+    width: 36px;
+
+    margin: 4px;
+  }
+
+  .versionList {
+    width: 34px;
+  }
+}
+
+@media (max-width: 440px) {
+  svg {
+    width: 28px;
+
+    margin: 4px;
+  }
+
+  .versionList {
+    width: 24px;
+  }
+}

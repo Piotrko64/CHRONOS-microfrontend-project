@@ -1,0 +1,23 @@
+<div class="container p-5">
+  <h1>Dodaj nowe wydarzenie</h1>
+  <div class="d-flex">
+    <div class="col-6 pt-4">
+      <add-event-form />
+    </div>
+    <div class="col-6 ps-4">
+      <h5 class="pt-4 ms-5">Wybierz tło</h5>
+      <div class="pt-3 ms-5 d-flex gap-1 flex-wrap">
+        <add-event-images-section label="Zwierzęta" [images]="petsBck" />
+        <add-event-images-section label="Abstrakcyjne" [images]="abstractBck" />
+        <add-event-images-section label="Krajobrazy" [images]="landscapesBck" />
+      </div>
+      <button
+        type="button"
+        class="mt-5 w-100 ms-5 btn btn-danger"
+        (click)="addEventHndler()"
+      >
+        Dodaj wydarzenie
+      </button>
+    </div>
+  </div>
+</div>

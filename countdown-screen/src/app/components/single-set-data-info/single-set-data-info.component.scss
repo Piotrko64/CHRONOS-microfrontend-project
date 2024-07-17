@@ -1,0 +1,43 @@
+.containerNumbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleType {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  &.versionList {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 1450px) {
+  .titleType {
+    font-size: 1.1rem;
+
+    &.versionList {
+      font-size: 0.98rem;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .titleType {
+    font-size: 0.95rem;
+
+    &.versionList {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .titleType {
+    font-size: 0.85rem;
+
+    &.versionList {
+      font-size: 0.8rem;
+    }
+  }
+}

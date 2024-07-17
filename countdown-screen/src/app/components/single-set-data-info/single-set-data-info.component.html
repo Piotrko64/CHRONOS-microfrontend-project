@@ -1,0 +1,15 @@
+<div class="mainContainer" *ngIf="nameTypeDate !== 'days'">
+  <div class="containerNumbers">
+    <app-digital-number
+      [activeNumbers]="objectToDisplayClock.firstNumber"
+      [versionList]="versionList"
+    ></app-digital-number>
+    <app-digital-number
+      [versionList]="versionList"
+      [activeNumbers]="objectToDisplayClock.secondNumber"
+    ></app-digital-number>
+  </div>
+  <div class="titleType" [ngClass]="{versionList}">
+    {{ nameTypeDate | uppercase }}
+  </div>
+</div>

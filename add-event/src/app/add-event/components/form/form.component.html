@@ -1,0 +1,50 @@
+<form [formGroup]="form">
+  <div class="mb-3">
+    <label for="eventName" class="form-label">Nazwa wydarzenia</label>
+    <input
+      type="email"
+      class="form-control"
+      id="eventName"
+      formControlName="name"
+    />
+    <div class="form-text">To będzie główna nazwa Twojego wydarzenia</div>
+  </div>
+  <div class="mb-3">
+    <label for="eventDescription">Opis wydarzenia</label>
+    <textarea
+      class="form-control"
+      id="eventDescription"
+      rows="3"
+      formControlName="description"
+    ></textarea>
+    <div class="form-text">
+      Możesz umieścić krótki tekst opisujący Twoje wydarzenie
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="eventDate" class="form-label">Data wydarzenia</label>
+    <div class="input-group">
+      <input
+        id="eventDate"
+        class="form-control"
+        placeholder="yyyy-mm-dd"
+        name="eventDate"
+        ngbDatepicker
+        #d="ngbDatepicker"
+        formControlName="date"
+      />
+      <button
+        class="btn btn-outline-secondary bi bi-calendar3"
+        (click)="d.toggle()"
+        type="button"
+      ></button>
+    </div>
+  </div>
+  <div class="mb-3">
+    <label class="form-check-label" for="exampleCheck1"
+      >Godzina wydarzenia</label
+    >
+
+ <!-- <ngb-timepicker [spinners]="true" formControlName="time" /> -->
+  </div>
+</form>

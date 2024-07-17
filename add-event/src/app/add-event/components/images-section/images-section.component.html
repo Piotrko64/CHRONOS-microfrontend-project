@@ -1,0 +1,8 @@
+<div class="d-flex flex-column">
+  <div class="form-text">{{ label }}</div>
+  <div class="d-flex">
+    @for(image of images; track image){
+    <add-event-image [name]="image" />
+    }
+  </div>
+</div>

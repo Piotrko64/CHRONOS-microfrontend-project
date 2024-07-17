@@ -1,0 +1,40 @@
+<single-spa-router mode="history">
+    <!--
+
+    This is the single-spa Layout Definition for your microfrontends.
+    See https://single-spa.js.org/docs/layout-definition/ for more information.
+
+  -->
+
+    <!-- Example layouts you might find helpful:
+
+  <nav>
+    <application name="@org/navbar"></application>
+  </nav>
+  <route path="settings">
+    <application name="@org/settings"></application>
+  </route>
+
+  -->
+
+
+
+    <a href="/countdown-screen" onclick="singleSpaNavigate(event)">ZMIANA NA COUNTDOWN</a>
+
+    <application name="@onwelo/home-page"></application>
+
+    <main>
+        <route path="home">
+            <application name="@onwelo/home-page"></application>
+        </route>
+        <route path="add-event">
+            <application name="add-event"></application>
+        </route>
+        <route path="countdown-screen">
+            <application name="countdown-screen"></application>
+        </route>
+        <route path="events-list">
+            <application name="@onwelo/events-list"></application>
+        </route>
+    </main>
+</single-spa-router>
