@@ -32,6 +32,21 @@ export class AddEventComponent {
       },
     ]);
 
+    localStorage.setItem(
+      'events',
+      JSON.stringify([
+        ...currentLS,
+        {
+          ...this.formComponent.form.value,
+          img: (
+            document.querySelector(
+              '.image-checkbox-checked'
+            ) as HTMLImageElement
+          ).src,
+        },
+      ])
+    );
+
     // this.spaNavigation.nativeElement.click();
   }
 
