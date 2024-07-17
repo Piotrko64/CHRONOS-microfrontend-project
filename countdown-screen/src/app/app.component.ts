@@ -50,6 +50,14 @@ export class AppComponent {
     const { hour, minute } = this.convertTo24Hour(currectScreenData.time);
 
     this.eventDate = new Date(year, month - 1, day, hour, minute);
+
+    if (currectScreenData.img) {
+      const bodyElement = document.querySelector('body');
+
+      if (bodyElement && currectScreenData.img) {
+        bodyElement.style.backgroundImage = `url(${currectScreenData.img})`;
+      }
+    }
   }
 
   private convertTo24Hour(time: string) {
