@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 const MAIN_SERVER_URL = 'http://localhost:4300/';
-const IMAGES_LOCATION = 'assets/elf.jpg';
+const IMAGES_LOCATION = 'assets/';
 const EXTENSION = '.avif';
 
 @Component({
