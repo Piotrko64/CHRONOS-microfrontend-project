@@ -21,12 +21,7 @@ export class FormComponent {
       name: this.fb.control(''),
       description: this.fb.control(''),
       date: this.fb.control(''),
-      time: this.fb.control(this.getCurrentTime()),
+      time: this.fb.control('04:00 PM'),
     });
-  }
-
-  private getCurrentTime() {
-    const date = new Date();
-    return { hour: date.getHours(), minute: date.getMinutes() };
   }
 }

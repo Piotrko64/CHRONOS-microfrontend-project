@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { FormComponent } from './components/form/form.component';
 import { landscapesBck, petsBck, abstractBck } from './constants/backgrounds';
 
@@ -8,12 +8,19 @@ import { landscapesBck, petsBck, abstractBck } from './constants/backgrounds';
 })
 export class AddEventComponent {
   @ViewChild(FormComponent) formComponent!: FormComponent;
-
+  @ViewChild('spaNavigation') spaNavigation!: ElementRef<HTMLAnchorElement>;
   protected landscapesBck = landscapesBck;
   protected petsBck = petsBck;
   protected abstractBck = abstractBck;
 
   protected addEventHndler() {
-    console.log(this.formComponent.form.value);
+    console.log(this.formComponent.form.valid);
+    console.log(this.formComponent.form);
+    console.log(this.spaNavigation);
+    // this.spaNavigation.nativeElement.click();
+  }
+
+  get isValidForm() {
+    return this.formComponent?.form?.valid;
   }
 }

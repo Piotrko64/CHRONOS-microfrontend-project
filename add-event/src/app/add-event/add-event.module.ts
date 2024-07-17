@@ -9,6 +9,8 @@ import { ImageComponent } from './components/image/image.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbTimepickerModule } from '@ng-bootstrap/ng-bootstrap';
 import { SelectPhotoDirective } from './directives/select-photo.directive';
+import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -21,10 +23,10 @@ import { SelectPhotoDirective } from './directives/select-photo.directive';
   imports: [
     CommonModule,
     NgbDatepickerModule,
-
     NgbTimepickerModule,
     FormsModule,
-
+    NgxMaterialTimepickerModule,
+    BrowserAnimationsModule,
     ReactiveFormsModule,
   ],
   exports: [AddEventComponent],

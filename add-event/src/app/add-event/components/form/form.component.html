@@ -44,7 +44,14 @@
     <label class="form-check-label" for="exampleCheck1"
       >Godzina wydarzenia</label
     >
+    <br />
 
-    <!-- <ngb-timepicker [spinners]="true" formControlName="time" /> -->
+    <input
+      [ngxTimepicker]="picker"
+      class="form-control"
+      formControlName="time"
+      [format]="24"
+    />
+    <ngx-material-timepicker #picker></ngx-material-timepicker>
   </div>
 </form>
