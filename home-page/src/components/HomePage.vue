@@ -1,99 +1,111 @@
 <template>
-  <div class="main-wrapper">
-    <div class="text-container">
-    <h1>CHR<span class="orange">ON</span>OS</h1>
-    <p>Śledź ile zostało czasu do najważniejszych wydarzeń w Twoim życiu dzięki spersonalizowanemu odliczaniu!</p>
-    <div class="buttons-wrapper">
-      <button class="btn-orange">Dodaj nowe zdarzenie</button>
-      <button class="btn-white">Zobacz listę wydarzeń</button>
+    <div class="main-wrapper">
+        <div class="text-container">
+            <h1>CHRON<span class="orange">OS</span></h1>
+            <p>
+                Śledź ile zostało czasu do najważniejszych wydarzeń w Twoim życiu dzięki spersonalizowanemu
+                odliczaniu!
+            </p>
+            <div class="buttons-wrapper">
+                <a class="btn-orange" href="/add-event" onclick="singleSpaNavigate(event)"
+                    >Dodaj nowe zdarzenie</a
+                >
+                <a class="btn-white" href="/events-list" onclick="singleSpaNavigate(event)"
+                    >Zobacz listę wydarzeń</a
+                >
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="../assets/images/undraw_time_management_re_tk5w-2.svg" alt="" />
+        </div>
     </div>
-    </div>
-    <div class="image-container">
-      <img src="../assets/images/undraw_time_management_re_tk5w-2.svg" alt="">
-
-    </div>
-  </div>
 </template>
 
 <script>
 export default {
-  name: 'HomePage',
-}
+    name: "HomePage",
+};
 </script>
 
 <style scoped>
-  .main-wrapper {
+.main-wrapper {
     height: 100%;
-    background: url('../assets/images/main-background.png');
+    min-height: 100dvh;
+    background: url("../assets/images/main-background.png");
     background-size: 100% 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20rem
-  }
+    gap: 20rem;
+}
 
-  .text-container {
+.text-container {
     width: 25%;
     display: flex;
     flex-direction: column;
-  }
+}
 
-  h1{
+h1 {
     margin-top: 0;
     font-size: 3.5rem;
     font-weight: 400;
-  }
+}
 
-  p {
+p {
     margin-top: 0;
     font-size: 1.5rem;
     font-weight: 300;
-  }
+}
 
-  span {
+span {
     font-weight: 600;
-  }
+}
 
-
-  .buttons-wrapper {
+.buttons-wrapper {
     display: flex;
     flex-direction: column;
-    gap: .6rem;
+    gap: 0.6rem;
     margin-top: 1rem;
-  }
+}
 
-  .image-container {
+.image-container {
     width: 25%;
-  }
+}
 
-  img {
+img {
     max-width: 100%;
-  }
+}
 
-  .btn-orange {
-    padding: .8rem 3.5rem;
-    background-color: #F9A826;
-    border: 2px solid #F9A826;
+.btn-orange {
+    padding: 0.8rem 3.5rem;
+    background-color: #f9a826;
+    border: 2px solid #f9a826;
     color: white;
     border-radius: 6px;
     font-size: 1rem;
-  }
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
 
-  .btn-white {
-    padding: .8rem 3.5rem;
+.btn-white {
+    padding: 0.8rem 3.5rem;
     background-color: #fff;
     border: none;
-    color: #F9A826;
-    border: 2px solid #F9A826;
+    color: #f9a826;
+    border: 2px solid #f9a826;
     border-radius: 6px;
     font-size: 1rem;
-  }
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
 
-  h1 {
-    margin-top: 0px
-  }
+h1 {
+    margin-top: 0px;
+}
 
-  .orange {
-    color: #F9A826;
-  }
+.orange {
+    color: #f9a826;
+}
 </style>

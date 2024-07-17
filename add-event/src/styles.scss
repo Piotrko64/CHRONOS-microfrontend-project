@@ -2,7 +2,7 @@
   font-family: "Lato", sans-serif;
 }
 body {
-  background: url("assets/background.svg");
+  background: url("/countdown-screen/src/assets/background.svg");
   background-repeat: no-repeat;
   background-size: auto;
 }
@@ -69,4 +69,3 @@ body {
 
 /* Importing Bootstrap SCSS file. */
 @import "bootstrap/scss/bootstrap";
-
