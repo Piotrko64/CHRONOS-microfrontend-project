@@ -45,7 +45,7 @@ export default {
 
 h1 {
     margin-top: 0;
-    font-size: 3.5rem;
+    font-size: 3.85rem;
     font-weight: 400;
 }
 
