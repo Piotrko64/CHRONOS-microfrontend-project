@@ -3,16 +3,14 @@
         <div class="text-container">
             <h1>CHRON<span class="orange">OS</span></h1>
             <p>
-                Śledź ile zostało czasu do najważniejszych wydarzeń w Twoim życiu dzięki spersonalizowanemu
-                odliczaniu!
+                Keep track of how much time is left until the most important events in your life with a
+                personalized countdown!
             </p>
             <div class="buttons-wrapper">
-                <a class="btn-orange" href="/add-event" onclick="singleSpaNavigate(event)"
-                    >Dodaj nowe zdarzenie</a
-                >
+                <a class="btn-orange" href="/add-event" onclick="singleSpaNavigate(event)">Add new event</a>
                 <a class="btn-white" href="/events-list" onclick="singleSpaNavigate(event)"
-                    >Zobacz listę wydarzeń</a
-                >
+                    >See all events
+                </a>
             </div>
         </div>
         <div class="image-container">
