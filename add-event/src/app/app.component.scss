@@ -3,3 +3,20 @@ body {
   background-repeat: no-repeat;
   background-size: auto;
 }
+
+::ng-deep ngx-material-timepicker-content {
+  --body-background-color: #fff;
+  --primary-font-family: "Roboto", sans-serif;
+  --button-color: orange !important;
+  --dial-active-color: #fff;
+  --dial-inactive-color: rgba(255, 255, 255, 0.5);
+  --dial-background-color: orange !important;
+  --dial-editable-active-color: orange !important;
+  --dial-editable-background-color: #fff;
+  --clock-face-time-active-color: #fff;
+  --clock-face-time-inactive-color: #6c6c6c;
+  --clock-face-inner-time-inactive-color: #929292;
+  --clock-face-time-disabled-color: #c5c5c5;
+  --clock-face-background-color: #f0f0f0;
+  --clock-hand-color: orange !important;
+}

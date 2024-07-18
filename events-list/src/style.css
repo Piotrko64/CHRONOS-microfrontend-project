@@ -88,3 +88,8 @@ h4 {
     padding: 10px;
     min-width: 240px;
 }
+
+.single-event p {
+    text-align: left;
+    text-transform: unset;
+}
