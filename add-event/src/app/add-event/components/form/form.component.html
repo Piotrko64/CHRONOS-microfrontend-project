@@ -1,16 +1,16 @@
 <form [formGroup]="form">
   <div class="mb-3">
-    <label for="eventName" class="form-label">Nazwa wydarzenia</label>
+    <label for="eventName" class="form-label">Event Name</label>
     <input
       type="email"
       class="form-control"
       id="eventName"
       formControlName="name"
     />
-    <div class="form-text">To będzie główna nazwa Twojego wydarzenia</div>
+    <div class="form-text">This will be the main name of your event</div>
   </div>
   <div class="mb-3">
-    <label for="eventDescription">Opis wydarzenia</label>
+    <label for="eventDescription">Event Description</label>
     <textarea
       class="form-control"
       id="eventDescription"
@@ -18,11 +18,11 @@
       formControlName="description"
     ></textarea>
     <div class="form-text">
-      Możesz umieścić krótki tekst opisujący Twoje wydarzenie
+      You can provide a brief description of your event
     </div>
   </div>
   <div class="mb-3">
-    <label for="eventDate" class="form-label">Data wydarzenia</label>
+    <label for="eventDate" class="form-label">Event Date</label>
     <div class="input-group">
       <input
         id="eventDate"
@@ -41,9 +41,7 @@
     </div>
   </div>
   <div class="mb-3">
-    <label class="form-check-label" for="exampleCheck1"
-      >Godzina wydarzenia</label
-    >
+    <label class="form-check-label" for="exampleCheck1">Event Time</label>
     <br />
 
     <input

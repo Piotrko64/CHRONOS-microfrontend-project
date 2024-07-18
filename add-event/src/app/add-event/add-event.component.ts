@@ -2,6 +2,9 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 import { FormComponent } from './components/form/form.component';
 import { landscapesBck, petsBck, abstractBck } from './constants/backgrounds';
 
+const DEFAULT_BACKGROUND =
+  'http://localhost:5050/img/main-background.ed394482.png';
+
 @Component({
   templateUrl: './add-event.component.html',
   styleUrl: './add-event.component.scss',
@@ -13,14 +16,11 @@ export class AddEventComponent {
   protected petsBck = petsBck;
   protected abstractBck = abstractBck;
 
-  protected addEventHndler() {
-    console.log(this.formComponent.form.valid);
-    console.log(this.formComponent.form);
-    console.log(this.spaNavigation);
-
+  protected addEventHandler() {
     const currentLS = JSON.parse(localStorage.getItem('events') || '[]');
-
-    // localStorage.setItem()
+    const img =
+      (document.querySelector('.image-checkbox-checked') as HTMLImageElement)
+        ?.src || DEFAULT_BACKGROUND;
 
     localStorage.setItem(
       'events',
@@ -28,11 +28,7 @@ export class AddEventComponent {
         ...currentLS,
         {
           ...this.formComponent.form.value,
-          img: (
-            document.querySelector(
-              '.image-checkbox-checked'
-            ) as HTMLImageElement
-          ).src,
+          img,
         },
       ])
     );
@@ -41,9 +37,7 @@ export class AddEventComponent {
       'current-event',
       JSON.stringify({
         ...this.formComponent.form.value,
-        img: (
-          document.querySelector('.image-checkbox-checked') as HTMLImageElement
-        ).src,
+        img,
       })
     );
 

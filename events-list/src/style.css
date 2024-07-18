@@ -12,11 +12,20 @@ body {
     padding-bottom: 50px;
 }
 
+p {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container h1 {
+    padding-bottom: 40px;
+}
+
 .go-to-home {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+
     padding: 0.8rem 3.5rem;
     background-color: #f9a826;
     border: 2px solid #f9a826;
@@ -27,8 +36,6 @@ body {
     text-align: center;
     text-decoration: none;
     width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 h1 {
@@ -54,6 +61,25 @@ h4 {
 
 .d-none {
     display: none;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 40px;
+}
+.add-event {
+    padding: 0.8rem 3.5rem;
+    background-color: #fff;
+    border: none;
+    color: #f9a826;
+    border: 2px solid #f9a826;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
 }
 
 .single-event {
