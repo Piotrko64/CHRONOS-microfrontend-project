@@ -15,12 +15,15 @@
 <img src="https://github.com/user-attachments/assets/42b021a8-4bde-4b99-890d-8f1efdb5ef72" alt="Angular-18"  height="50" align="center"/>
 </div>
 
-
-## Some Screenshots
-
-### Home Page
 ![obraz](https://github.com/user-attachments/assets/ea64a54b-39f9-496d-ac08-887bbffd32ec)
 
+# Instalation
+- Download files by **git clone _repository-name_**
+- You need to instal packages for every folder ( for example "cd countdown-screen" and next "npm i")
+- Use **npm run start** for every project
+
+
+## More Screenshots
 ### Adding event
 ![obraz](https://github.com/user-attachments/assets/88233a46-e9a1-47f7-be22-0816ef8de94e)
 
