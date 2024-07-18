@@ -3,9 +3,7 @@
 <p align="center">This Event Tracker application utilizes Single SPA to seamlessly integrate Angular 16, Angular 17, Vue, and React. It enables efficient event tracking with detailed management features and a visually appealing countdown timer for upcoming events. This project was built primarily to demonstrate how Microfrontend (single SPA) can be used when you want to use several frameworks while showing the advantages, disadvantages as well as challenges 
 </p>
 <div align="center">
-![1_Klh1l7wkoG6PDPb9A5oCHQ]()
-![Angular_full_color_logo svg]()
-![Vue js_Logo_2 svg]()
+
 
 
 <img src="https://user-images.githubusercontent.com/77500425/161312230-36d37ac5-8801-4313-a68c-c5695c429b70.png" alt="javascript" height="50" align="center" title="JS"/>
