@@ -6,6 +6,7 @@
 
 
 
+<img src="https://github.com/user-attachments/assets/272b515f-27d5-4344-a659-0942e52fff7a" alt="SINGLE SPA" height="50" align="center" title="Single SPA"/>
 <img src="https://user-images.githubusercontent.com/77500425/161312230-36d37ac5-8801-4313-a68c-c5695c429b70.png" alt="javascript" height="50" align="center" title="JS"/>
 <img src="https://user-images.githubusercontent.com/77500425/161311954-e03613e7-54b2-4d1b-ac2e-559f8c1e9f2d.png" alt="typescript" height="50"  align="center" title="TS"/>
 <img src="https://user-images.githubusercontent.com/77500425/161312615-f3961568-28bb-48fa-9d95-93ecd61337b3.png" alt="react"  height="50" align="center"/>
@@ -17,13 +18,36 @@
 
 ![obraz](https://github.com/user-attachments/assets/ea64a54b-39f9-496d-ac08-887bbffd32ec)
 
-# Instalation
+## Instalation
 - Download files by **git clone _repository-name_**
 - You need to instal packages for every folder ( for example "cd countdown-screen" and next "npm i")
 - Use **npm run start** for every project
 
+## Some education content about Microfrontend!
 
-## More Screenshots
+### What is Microfrontend?
+Microfrontend is an architectural approach where a user interface is decomposed into smaller, independently developed parts called microfrontends. Each microfrontend is typically developed by a separate team and may utilize different technologies. Single SPA, on the other hand, is a framework that facilitates the integration of these microfrontends into a single application, managing their lifecycle and enabling seamless transitions between them without page reloads.
+
+### States in Microfrontend
+You can read more about this on single-spa site: 
+[https://single-spa.js.org/docs/faq/](https://single-spa.js.org/docs/faq/#how-can-i-share-application-state-between-applications)
+
+Okey! But I also would like tell about this from me and my approach.
+State managment in Microfrontend Architecture is... HARD! We are dealing with several different technologies! For my application I use Local Storage - this is enough in this case! Why? Because global state is needed mainly when we switches between screens. Hovewer, If we would like communicate between apps when several is in on screen on this same time We can use also JavaScript Event and dispatch Event. I once wrote about it on my profile on Polish linkedin (https://www.linkedin.com/posts/piotr-ko%C5%82odziejczyk_javascript-coding-webdev-activity-7162534812040343552-U4U9?utm_source=share&utm_medium=member_desktop)
+
+
+
+### Routing and navigation
+
+We can use anchor and function form singleSPA to navigation
+![obraz](https://github.com/user-attachments/assets/a37b63b2-9110-4db7-9846-f8eab70acc28)
+
+or navigate a little bit better programmatic
+![obraz](https://github.com/user-attachments/assets/828e8596-000d-46a6-ba05-9a097f680a67)
+
+
+
+#@ More Screenshots
 ### Adding event
 ![obraz](https://github.com/user-attachments/assets/88233a46-e9a1-47f7-be22-0816ef8de94e)
 
