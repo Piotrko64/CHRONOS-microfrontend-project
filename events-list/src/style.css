@@ -1,0 +1,64 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    max-width: 1400px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 25px;
+    padding-bottom: 50px;
+}
+
+.go-to-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding: 0.8rem 3.5rem;
+    background-color: #f9a826;
+    border: 2px solid #f9a826;
+    color: white;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+}
+h4 {
+    margin-top: 0 !important;
+}
+
+.container-events {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.look-event {
+    padding-top: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.d-none {
+    display: none;
+}
+
+.single-event {
+    border: 2px solid orange;
+    border-radius: 6px;
+    padding: 10px;
+    min-width: 240px;
+}

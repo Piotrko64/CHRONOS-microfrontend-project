@@ -1,0 +1,36 @@
+* {
+  font-family: "Lato", sans-serif;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.btn-orange {
+  padding: 0.8rem 3.5rem;
+  background-color: #f9a826;
+  border: 2px solid #f9a826;
+  color: white;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-white {
+  padding: 0.8rem 3.5rem;
+  background-color: #fff;
+  border: none;
+  color: #f9a826;
+  border: 2px solid #f9a826;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}

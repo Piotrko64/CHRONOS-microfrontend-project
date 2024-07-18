@@ -4,4 +4,17 @@
   [description]="description"
   [isScreenSaverMode]="false"
 ></app-whole-set-info>
-<button (click)="turnFullScreen()">Włącz tryb Full Screena</button>
+<div class="buttons">
+  <button (click)="turnFullScreen()" class="btn-orange">
+    Full screen mode
+  </button>
+
+  <a
+    *ngIf="!isScreenSaverMode"
+    href="events-list"
+    onclick="singleSpaNavigate(event)"
+    class="btn-white"
+  >
+    Back to list
+  </a>
+</div>

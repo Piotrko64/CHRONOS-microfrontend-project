@@ -32,16 +32,12 @@ export class AppComponent {
   }
 
   ngOnInit() {
-    console.log(new Date().getUTCDate());
-    console.log(localStorage.getItem('currentScreen')!);
     const currectScreenData: CurrentScreen = JSON.parse(
       localStorage.getItem('current-event')!
     );
     console.log(currectScreenData);
     if (!currectScreenData) return;
 
-    // this.eventDate = new Date(currectScreenData.endDate);
-    console.log(currectScreenData);
     this.title = currectScreenData.name;
     this.description = currectScreenData.description;
     this.backgroundUrl = currectScreenData.img;
