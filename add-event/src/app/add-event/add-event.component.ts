@@ -18,28 +18,19 @@ export class AddEventComponent {
 
   protected addEventHandler() {
     const currentLS = JSON.parse(localStorage.getItem('events') || '[]');
+
     const img =
       (document.querySelector('.image-checkbox-checked') as HTMLImageElement)
         ?.src || DEFAULT_BACKGROUND;
 
-    localStorage.setItem(
-      'events',
-      JSON.stringify([
-        ...currentLS,
-        {
-          ...this.formComponent.form.value,
-          img,
-        },
-      ])
-    );
+    const newEvent = {
+      id: JSON.parse(localStorage.getItem('events') || '0') as number,
+      ...this.formComponent.form.value,
+      img,
+    };
 
-    localStorage.setItem(
-      'current-event',
-      JSON.stringify({
-        ...this.formComponent.form.value,
-        img,
-      })
-    );
+    localStorage.setItem('events', JSON.stringify([...currentLS, newEvent]));
+    localStorage.setItem('current-event', JSON.stringify(newEvent));
 
     this.spaNavigation.nativeElement.click();
   }

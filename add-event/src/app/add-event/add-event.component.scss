@@ -3,8 +3,8 @@
 }
 .container {
   width: 100vw;
-  height: 100vh;
-  background: none !important;
+
+  background: white !important;
 }
 ngb-datepicker {
   width: 400px !important;
@@ -54,7 +54,7 @@ img {
 .image-checkbox .fa {
   position: absolute;
   color: #4a79a3;
-  background-color: #fff;
+  background-color: transparent;
   padding: 10px;
   top: 0;
   right: 0;

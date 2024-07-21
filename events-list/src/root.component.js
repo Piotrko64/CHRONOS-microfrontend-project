@@ -7,7 +7,6 @@ export default function Root() {
     const navigation = useRef(null);
 
     function navigationToCountdown(event) {
-        console.log(event);
         localStorage.setItem("current-event", JSON.stringify(event));
 
         navigation.current.click();
@@ -23,7 +22,7 @@ export default function Root() {
                 <div className="container-events">
                     {events.map((event) => {
                         return (
-                            <div key={event.name} className="single-event">
+                            <div key={event.id || event.name} className="single-event">
                                 <h4>{event.name} </h4>
                                 <p>
                                     aa

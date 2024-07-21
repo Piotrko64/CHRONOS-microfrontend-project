@@ -35,7 +35,6 @@ export class AppComponent {
     const currectScreenData: CurrentScreen = JSON.parse(
       localStorage.getItem('current-event')!
     );
-    console.log(currectScreenData);
     if (!currectScreenData) return;
 
     this.title = currectScreenData.name;

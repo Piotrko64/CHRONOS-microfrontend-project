@@ -13,7 +13,6 @@ export class SelectPhotoDirective {
     const allImages = document.querySelectorAll('.img-responsive');
 
     allImages.forEach((img) => {
-      console.log(img);
       img.classList.remove('image-checkbox-checked');
     });
 
