@@ -1,8 +1,8 @@
-import { calculateDifferentDates } from 'src/app/utils/calculateDifferentDates';
-import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
-import { interval, timer } from 'rxjs';
+import { Component, Input, OnInit } from '@angular/core';
+import { timer } from 'rxjs';
 import { ObjectCountdown } from 'src/app/@types/ObjectCountdown';
 import { typesNumbers } from 'src/app/data/digitalClock/typesNumbers';
+import { calculateDifferentDates } from 'src/app/utils/calculateDifferentDates';
 
 @Component({
   selector: 'app-whole-set-info',
