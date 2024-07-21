@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -18,8 +18,8 @@ export class FormComponent {
 
   private initializeForm() {
     this.form = this.fb.group({
-      name: this.fb.control(''),
-      description: this.fb.control(''),
+      name: this.fb.control('', Validators.required),
+      description: this.fb.control('', Validators.required),
       date: this.fb.control(''),
       time: this.fb.control('04:00 PM'),
     });
