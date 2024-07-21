@@ -24,6 +24,11 @@
 - You need to install packages for every folder ( for example "cd countdown-screen" and next "npm i")
 - Use **npm run start** for every project
 
+## Screens and technologies
+
+- <img src="https://github.com/user-attachments/assets/fadb3c25-3df6-4d49-93fa-f65775d99a19" alt="Vue"  height="50" align="center"/> Homepage - VueJS
+
+
 ## Some education content about Microfrontend!
 
 ### What is Microfrontend?
