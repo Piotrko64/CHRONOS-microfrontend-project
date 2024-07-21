@@ -60,6 +60,17 @@ or navigate a little bit better programmatic
 #### Example routing via single SPA
 ![obraz](https://github.com/user-attachments/assets/f4495e21-6df0-4e05-b02b-98cfb9194cec)
 
+## Why Use Microfrontends?
+
+Microfrontends increase flexibility and scalability for large frontend applications. They enable independent team work, faster development, and easier maintenance by isolating changes to specific modules without affecting the entire application.
+Teams can use different technologies for different microfrontends, allowing them to choose the best tools for their needs. Each microfrontend can be developed, tested, and deployed independently, simplifying maintenance and updates.
+
+## Challenges and Disadvantages of Microfrontends
+
+- **Complex Integration** Integrating multiple microfrontends can be complex, especially in managing state, navigation, and communication between components.
+- **UI/UX Consistency** Maintaining a consistent user interface and experience can be challenging with different teams developing separate parts of the application.
+- **Performance Issues** Each microfrontend may bring its dependencies and resources, potentially leading to performance issues like longer load times.
+
 
 
 ## More Screenshots
@@ -68,6 +79,8 @@ or navigate a little bit better programmatic
 
 ### Countdown screen
 ![obraz](https://github.com/user-attachments/assets/4c109b88-ca7b-4559-ad28-e3d0afbc46f6)
+
+
 
 
 
