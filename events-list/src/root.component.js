@@ -46,19 +46,14 @@ export default function Root() {
                     })}
                 </div>
             )}
-            <a
-                href="/countdown-screen"
-                className="d-none"
-                onclick="singleSpaNavigate(event)"
-                ref={navigation}
-            ></a>
-            <div class="buttons">
-                <a href="/home" className="go-to-home" onclick="singleSpaNavigate(event)">
+            <a href="/countdown-screen" className="d-none" onClick={singleSpaNavigate} ref={navigation}></a>
+            <div className="buttons">
+                <a href="/home" className="go-to-home" onClick={singleSpaNavigate}>
                     {" "}
                     Go to HomePage{" "}
                 </a>
 
-                <a href="/add-event" className="add-event" onclick="singleSpaNavigate(event)">
+                <a href="/add-event" className="add-event" onClick={singleSpaNavigate}>
                     {" "}
                     Add new event{" "}
                 </a>
