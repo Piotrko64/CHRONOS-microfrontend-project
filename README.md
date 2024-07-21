@@ -18,9 +18,9 @@
 
 ![obraz](https://github.com/user-attachments/assets/ea64a54b-39f9-496d-ac08-887bbffd32ec)
 
-## Instalation
+## Installation
 - Download files by **git clone _repository-name_**
-- You need to instal packages for every folder ( for example "cd countdown-screen" and next "npm i")
+- You need to install packages for every folder ( for example "cd countdown-screen" and next "npm i")
 - Use **npm run start** for every project
 
 ## Some education content about Microfrontend!
@@ -32,7 +32,7 @@ Microfrontend is an architectural approach where a user interface is decomposed 
 You can read more about this on single-spa site: 
 [https://single-spa.js.org/docs/faq/](https://single-spa.js.org/docs/faq/#how-can-i-share-application-state-between-applications)
 
-Okey! But I also would like tell about this from me and my approach.
+Okay! But I also would like tell about this from me and my approach.
 State managment in Microfrontend Architecture is... HARD! We are dealing with several different technologies! For my application I use Local Storage - this is enough in this case! Why? Because global state is needed mainly when we switches between screens. Hovewer, If we would like communicate between apps when several is in on screen on this same time We can use also JavaScript Event and dispatch Event. I once wrote about it on my profile on Polish linkedin (https://www.linkedin.com/posts/piotr-ko%C5%82odziejczyk_javascript-coding-webdev-activity-7162534812040343552-U4U9?utm_source=share&utm_medium=member_desktop)
 
 
@@ -44,6 +44,10 @@ We can use anchor and function form singleSPA to navigation
 
 or navigate a little bit better programmatic
 ![obraz](https://github.com/user-attachments/assets/828e8596-000d-46a6-ba05-9a097f680a67)
+
+
+#### Example routing via single SPA
+![obraz](https://github.com/user-attachments/assets/f4495e21-6df0-4e05-b02b-98cfb9194cec)
 
 
 
