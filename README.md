@@ -45,6 +45,7 @@ You can read more about this on single-spa site:
 Okay! But I also would like tell about this from me and my approach.
 State managment in Microfrontend Architecture is... HARD! We are dealing with several different technologies! For my application I use Local Storage - this is enough in this case! Why? Because global state is needed mainly when we switches between screens. Hovewer, If we would like communicate between apps when several is in on screen on this same time We can use also JavaScript Event and dispatch Event. I once wrote about it on my profile on Polish linkedin (https://www.linkedin.com/posts/piotr-ko%C5%82odziejczyk_javascript-coding-webdev-activity-7162534812040343552-U4U9?utm_source=share&utm_medium=member_desktop)
 
+![obraz](https://github.com/user-attachments/assets/a6039405-cc41-4575-9d5a-b2d39334f532)
 
 
 ### Routing and navigation
