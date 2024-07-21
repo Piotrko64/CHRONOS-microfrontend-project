@@ -13,7 +13,7 @@
 <img src="https://github.com/user-attachments/assets/8455e19e-1cfc-44c3-aa89-5ee670f4819f" alt="Angular"  height="50" align="center"/>
 <img src="https://github.com/user-attachments/assets/fadb3c25-3df6-4d49-93fa-f65775d99a19" alt="Vue"  height="50" align="center"/>
 
-<img src="https://github.com/user-attachments/assets/42b021a8-4bde-4b99-890d-8f1efdb5ef72" alt="Angular-18"  height="50" align="center"/>
+<img src="https://github.com/user-attachments/assets/42b021a8-4bde-4b99-890d-8f1efdb5ef72" alt="Angular-17"  height="50" align="center"/>
 </div>
 
 ![obraz](https://github.com/user-attachments/assets/ea64a54b-39f9-496d-ac08-887bbffd32ec)
@@ -26,7 +26,11 @@
 
 ## Screens and technologies
 
-- <img src="https://github.com/user-attachments/assets/fadb3c25-3df6-4d49-93fa-f65775d99a19" alt="Vue"  height="50" align="center"/> Homepage - VueJS
+ <img src="https://github.com/user-attachments/assets/fadb3c25-3df6-4d49-93fa-f65775d99a19" alt="Vue"  height="50" align="center"/> Homepage - VueJS
+ <img src="https://user-images.githubusercontent.com/77500425/161312615-f3961568-28bb-48fa-9d95-93ecd61337b3.png" alt="react"  height="50" align="center"/> Event List - React
+<img src="https://github.com/user-attachments/assets/8455e19e-1cfc-44c3-aa89-5ee670f4819f" alt="Angular"  height="50" align="center"/> Countdown screen (digital clock) - Angular 16
+<img src="https://github.com/user-attachments/assets/42b021a8-4bde-4b99-890d-8f1efdb5ef72" alt="Angular-18"  height="50" align="center"/> Add Event - Angular 17
+
 
 
 ## Some education content about Microfrontend!
