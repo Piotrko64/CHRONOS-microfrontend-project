@@ -1,5 +1,5 @@
 {
-    "name": "@onwelo/home-page",
+    "name": "home-page",
     "version": "0.1.0",
     "private": true,
     "scripts": {
