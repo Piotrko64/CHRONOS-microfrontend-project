@@ -58,3 +58,13 @@ or navigate a little bit better programmatic
 
 ### Countdown screen
 ![obraz](https://github.com/user-attachments/assets/4c109b88-ca7b-4559-ad28-e3d0afbc46f6)
+
+
+
+## Special thanks for my friends:
+
+- Kuba Kuśmierczyk (https://github.com/bBravee) - creator of homepage (vueJS) from my design in Figma;
+- Kuba Wrona (https://github.com/Wronqa) - creator of add event screen (angular 17);
+- Bartłomie Wydrzycki (https://github.com/Wydreq) - creator of event list (REACT)
+
+
