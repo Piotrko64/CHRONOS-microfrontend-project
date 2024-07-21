@@ -10,9 +10,8 @@
   </button>
 
   <a
-    *ngIf="!isScreenSaverMode"
     href="events-list"
-    onclick="singleSpaNavigate(event)"
+    onclick="singleSpaNavigate(event); document?.fullscreenElement && document.exitFullscreen?.()"
     class="btn-white"
   >
     Back to list

@@ -12,12 +12,12 @@ body {
     padding-bottom: 50px;
 }
 
-p {
+p.desc {
     text-align: center;
     text-transform: uppercase;
 }
 
-.container h1 {
+.container h1.heading {
     padding-bottom: 40px;
 }
 
@@ -38,7 +38,7 @@ p {
     width: fit-content;
 }
 
-h1 {
+h1.heading {
     text-align: center;
     width: 100%;
 }

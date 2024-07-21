@@ -14,25 +14,23 @@ export default function Root() {
 
     return (
         <div className="container">
-            <h1> Event list </h1>
+            <h1 className="heading"> Event list </h1>
 
             {!events || events?.length === 0 ? (
-                <p> lack of events </p>
+                <p className="desc"> lack of events </p>
             ) : (
                 <div className="container-events">
                     {events.map((event) => {
                         return (
                             <div key={event.id || event.name} className="single-event">
                                 <h4>{event.name} </h4>
-                                <p>
-                                    aa
+                                <p className="desc">
                                     {event.description.length > 70
                                         ? event.description.slice(0, 60) + "..."
                                         : event.description}
                                 </p>
 
                                 <i>
-                                    {" "}
                                     {`${event.date.day}/${event.date.month}/${event.date.year}, ${event.time}`}{" "}
                                 </i>
 
@@ -48,13 +46,11 @@ export default function Root() {
             <a href="/countdown-screen" className="d-none" onClick={singleSpaNavigate} ref={navigation}></a>
             <div className="buttons">
                 <a href="/home" className="go-to-home" onClick={singleSpaNavigate}>
-                    {" "}
-                    Go to HomePage{" "}
+                    Go to HomePage
                 </a>
 
                 <a href="/add-event" className="add-event" onClick={singleSpaNavigate}>
-                    {" "}
-                    Add new event{" "}
+                    Add new event
                 </a>
             </div>
         </div>
