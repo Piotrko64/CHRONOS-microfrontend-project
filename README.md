@@ -1,6 +1,6 @@
 # <p align="center">CHRONOS - MicroFrontend project </p>
 
-<p align="center">This Event Tracker application utilizes Single SPA to seamlessly integrate Angular 16, Angular 17, Vue, and React. It enables efficient event tracking with detailed management features and a visually appealing countdown timer for upcoming events. This project was built primarily to demonstrate how Microfrontend (single SPA) can be used when you want to use several frameworks while showing the advantages, disadvantages as well as challenges 
+<p align="center">This Event Tracker application utilizes Single SPA to seamlessly integrate Angular 16, Angular 17, Vue, and React. It enables efficient event tracking with detailed management features and a visually appealing countdown timer for upcoming events. This project was built primarily to demonstrate how Microfrontend (single SPA) can be used when you want to use several frameworks while showing the advantages, disadvantages as well as challenges. This app isn't so complicated.
 </p>
 <div align="center">
 
@@ -17,6 +17,7 @@
 </div>
 
 ![obraz](https://github.com/user-attachments/assets/ea64a54b-39f9-496d-ac08-887bbffd32ec)
+
 
 ## Installation
 - Download files by **git clone _repository-name_**
@@ -57,3 +58,13 @@ or navigate a little bit better programmatic
 
 ### Countdown screen
 ![obraz](https://github.com/user-attachments/assets/4c109b88-ca7b-4559-ad28-e3d0afbc46f6)
+
+
+
+## Special thanks for my friends:
+
+- Kuba Kuśmierczyk (https://github.com/bBravee) - creator of homepage (vueJS) from my design in Figma;
+- Kuba Wrona (https://github.com/Wronqa) - creator of add event screen (angular 17);
+- Bartłomie Wydrzycki (https://github.com/Wydreq) - creator of event list (REACT)
+
+
